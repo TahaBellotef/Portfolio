@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Taha Bellotef — Full-Stack Software Engineer</title>
+<meta name="description" content="Full-stack engineer building web, Android and computer-vision products. Next.js, Kotlin, Spring Boot, Python, Kubernetes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f4f8;--fg:#0f1b2d;--mut:#55627a;--acc:#1f5fff;--line:#d5dbe6;--panel:#fff;--bone:#1f5fff;--joint:#e11d63;--grid:#8fa0bd;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--fg:#e7edf7;--mut:#93a1ba;--acc:#7aa7ff;--line:#22304a;--panel:#111a2c;--bone:#7aa7ff;--joint:#ff5c8a;--grid:#3a4d72}}
+:root[data-theme="dark"]{--bg:#0b1220;--fg:#e7edf7;--mut:#93a1ba;--acc:#7aa7ff;--line:#22304a;--panel:#111a2c;--bone:#7aa7ff;--joint:#ff5c8a;--grid:#3a4d72}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.6 "Hanken Grotesk",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Hanken Grotesk",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:var(--acc)}a:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;min-height:min(92vh,760px);gap:8px;max-width:1240px;margin:0 auto;padding:0 24px}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5.2rem);font-weight:800;letter-spacing:-.03em}
+.role{font-size:1.25rem;color:var(--mut);margin:18px 0 10px;max-width:30em}
+.lede{max-width:34em;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:1.5px solid var(--fg);color:var(--fg)}
+.btn.p{background:var(--fg);color:var(--bg)}
+.stage{position:relative;height:min(70vh,600px);min-height:340px}
+.stage canvas{width:100%;height:100%;display:block}
+.hud{position:absolute;left:4px;bottom:6px;font-size:.8rem;color:var(--mut);font-variant-numeric:tabular-nums}
+.hud b{color:var(--joint);font-weight:600}
+section{padding:84px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:700;letter-spacing:-.02em;margin-bottom:36px}
+.tl{list-style:none;margin:0;padding:0 0 0 26px;border-left:2px solid var(--line)}
+.tl li{position:relative;padding:0 0 40px}
+.tl li::before{content:"";position:absolute;left:-33px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:3px solid var(--acc)}
+.tl h3{font-size:1.4rem}.meta{color:var(--mut);font-size:.95rem;margin:4px 0 12px}
+.tl ul{margin:0;padding-left:1.1em;max-width:46em}.tl li li{padding:0 0 6px}.tl li li::before{display:none}
+.feat{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:34px;margin-bottom:28px}
+.feat h3{font-size:1.8rem;margin-bottom:10px}
+.feat .cols{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 32px;margin-top:18px}
+.feat p{margin:0;max-width:44em}
+.rows .row{display:grid;grid-template-columns:230px 1fr;gap:10px 32px;padding:26px 0;border-top:1px solid var(--line)}
+.rows .row:last-child{border-bottom:1px solid var(--line)}
+.rows h3{font-size:1.3rem}.rows p{margin:0 0 8px}.stack{color:var(--mut);font-size:.92rem}
+.fig{font-weight:700;color:var(--acc)}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px}
+.skills div{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line)}
+.skills dt{font-weight:600}.skills dd{margin:0;color:var(--mut)}
+.edu{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+.edu p{margin:4px 0 0;color:var(--mut)}
+.contact{text-align:left}.contact a.big{font:700 clamp(1.4rem,4.4vw,2.6rem)/1.2 "Bricolage Grotesque",system-ui,sans-serif;word-break:break-all}
+footer{padding:28px 0 40px;color:var(--mut);font-size:.9rem}
+@media (max-width:860px){
+.hero{grid-template-columns:1fr;min-height:0;padding-top:12px}.stage{order:-1;height:340px}
+.feat .cols,.skills,.edu{grid-template-columns:1fr}.rows .row{grid-template-columns:1fr}
+.skills div{grid-template-columns:110px 1fr}section{padding:60px 0}.feat{padding:24px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div>
+    <h1>Taha Bellotef</h1>
+    <p class="role">Full-stack software engineer building web, Android and computer-vision products.</p>
+    <p class="lede">I ship from architecture to production: Next.js and Spring Boot backends, native Kotlin apps, and Python pipelines that turn video into measurable data. Based in Tunis, working remotely with a Paris startup.</p>
+    <div class="btns"><a class="btn p" href="#work">See my work</a><a class="btn" href="#contact">Get in touch</a></div>
+  </div>
+  <div class="stage" role="img" aria-label="Animated 3D figure carrying a briefcase, walking toward an open door">
+    <canvas id="c"></canvas>
+    <div class="hud">Open to full-stack and mobile roles · relocation welcome</div>
+  </div>
+</header>
+
+<main>
+<section id="work"><div class="wrap">
+  <h2>Selected work</h2>
+  <article class="feat">
+    <h3>StrideMatch</h3>
+    <p>An AI running-analysis product. Runners upload multi-angle videos and photos, and get biomechanics and shoe advice back. I build the web platform and the native Android app.</p>
+    <div class="cols">
+      <p><span class="fig">Pose pipeline.</span> Markerless pose estimation with RTMPose, extracting stride, pronation, cadence and gait symmetry.</p>
+      <p><span class="fig">Shoe recommendations.</span> An engine that maps a runner's biometrics and results to personalised footwear.</p>
+      <p><span class="fig">Foot scanning.</span> Computer vision that finds the right shoe size from multi-angle photos.</p>
+      <p><span class="fig">PDF reports.</span> A tier-based, branded report generator in jsPDF and TypeScript.</p>
+    </div>
+    <p class="stack" style="margin-top:18px">Next.js · React · TypeScript · Tailwind · Kotlin · Jetpack Compose · Python · RTMPose</p>
+  </article>
+  <div class="rows">
+    <div class="row"><h3>ParkIt</h3><div><p>Smart parking: live spot detection and licence-plate recognition at <span class="fig">98% precision</span>, with a reservation system.</p><span class="stack">YOLOv5 · OpenCV · ESP32 · Next.js · Node.js · MongoDB · Docker</span></div></div>
+    <div class="row"><h3>Football Field Reservation</h3><div><p>Five Kafka-based microservices with payments and reviews, deployed on Kubernetes with Terraform and GitLab CI/CD. <span class="fig">80% test coverage.</span></p><span class="stack">Spring Boot · Kafka · Kubernetes · Terraform · JUnit · Testcontainers</span></div></div>
+    <div class="row"><h3>Mnéma SmartHealth</h3><div><p>An AI nutrition and fitness recommendation platform, rated <span class="fig">4.5/5</span> by users.</p><span class="stack">OpenAI API · Laravel · AWS Lambda</span></div></div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Experience</h2>
+  <ol class="tl">
+    <li><h3>Full-Stack Engineer, StrideMatch</h3><div class="meta">Paris, France (remote) · Jan 2026 – present</div>
+      <ul><li>Built the web platform and native Android app from architecture to production.</li><li>Co-developed the RTMPose computer-vision pipeline and the shoe-sizing scanner.</li></ul></li>
+    <li><h3>Odoo Developer Intern, TeamDoo by Okteo</h3><div class="meta">Tunis · Jul 2024 – Sep 2025</div>
+      <ul><li>Built a production Odoo module with hierarchical pricing and automated margins: quotations <span class="fig">80% faster</span>, manual errors <span class="fig">down 95%</span>.</li><li>Cut rendering time by 40% and added PDF generation and a stateful frontend widget.</li></ul></li>
+    <li><h3>Full-Stack MERN Developer Intern, WICO</h3><div class="meta">Tunis · Jan – Jun 2023 · client: Nefzewa FM</div>
+      <ul><li>Built a real-time admin dashboard and a secure online voting platform with OAuth 2.0 and live WebSocket updates.</li></ul></li>
+  </ol>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Toolbox</h2>
+  <dl class="skills" style="margin:0">
+    <div><dt>Languages</dt><dd>JavaScript, TypeScript, Python, Java, Kotlin, C#, PHP</dd></div>
+    <div><dt>Frontend</dt><dd>React, Next.js, Redux, Angular, Tailwind CSS</dd></div>
+    <div><dt>Backend</dt><dd>Node.js, Express, Spring Boot, Django, FastAPI, Laravel</dd></div>
+    <div><dt>Mobile</dt><dd>Kotlin (Jetpack Compose), Flutter, React Native</dd></div>
+    <div><dt>AI and vision</dt><dd>RTMPose, YOLOv5, OpenCV, OpenAI API, Stable Diffusion</dd></div>
+    <div><dt>DevOps</dt><dd>Docker, Kubernetes, Jenkins, Terraform, AWS (Lambda, ECS)</dd></div>
+    <div><dt>Data</dt><dd>MongoDB, PostgreSQL, MySQL, Kafka</dd></div>
+    <div><dt>Practice</dt><dd>REST, microservices, OAuth 2.0 / JWT, CI/CD, Agile, unit testing</dd></div>
+  </dl>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <h2>Education</h2>
+  <div class="edu">
+    <div><h3>Software Engineering Degree</h3><p>ESPRIT School of Engineering · 2023 – 2026</p></div>
+    <div><h3>Business Intelligence Diploma</h3><p>ISIMA, Mahdia · 2020 – 2023</p></div>
+    <div><h3>Certifications</h3><p>AWS Academy Graduate, Cloud Foundations (2025) · Hashgraph Developer Course (2025)</p></div>
+    <div><h3>Languages</h3><p>Arabic (native) · French (fluent) · English (fluent) · German (intermediate)</p></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+  <h2>Let's talk</h2>
+  <p>Open to full-stack and mobile roles, including relocation abroad.</p>
+  <p><a class="big" href="mailto:Tahabellotef1401@gmail.com">Tahabellotef1401@gmail.com</a></p>
+  <p><a href="tel:+21629668143">+216 29 668 143</a> <span id="ln"></span> <span id="gh"></span></p>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Taha Bellotef</div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+// Add your profile URLs here; empty ones are hidden.
+const LINKS={linkedin:"",github:""};
+for(const [k,id,l] of [["linkedin","ln","LinkedIn"],["github","gh","GitHub"]])
+  if(LINKS[k]){document.getElementById(id).innerHTML=' · <a href="'+LINKS[k]+'" rel="noopener">'+l+'</a>'}
+
+(function(){
+  const T=THREE,cvs=document.getElementById("c");
+  let renderer;
+  try{renderer=new T.WebGLRenderer({canvas:cvs,antialias:true,alpha:true})}catch(e){cvs.parentNode.style.display="none";return}
+  renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+  const scene=new T.Scene(),cam=new T.PerspectiveCamera(34,1,.1,50);
+  const boneM=new T.MeshBasicMaterial(),jointM=new T.MeshBasicMaterial(),gridM=new T.LineBasicMaterial({transparent:true,opacity:.4}),caseM=new T.MeshBasicMaterial({transparent:true,opacity:.3,side:T.DoubleSide}),lineM=new T.LineBasicMaterial(),doorM=new T.MeshBasicMaterial({transparent:true,opacity:.2,side:T.DoubleSide,depthWrite:false}),doorL=new T.LineBasicMaterial();
+  const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  function colors(){boneM.color.set(css("--bone"));jointM.color.set(css("--joint"));gridM.color.set(css("--grid"));caseM.color.set(css("--bone"));lineM.color.set(css("--bone"));doorM.color.set(css("--acc"));doorL.color.set(css("--acc"))}
+  colors();matchMedia("(prefers-color-scheme:dark)").addEventListener("change",colors);
+
+  const names=["head","sh","hip","elL","wrL","elR","wrR","knL","anL","ftL","knR","anR","ftR"];
+  const links=[["head","sh"],["sh","hip"],["sh","elL"],["elL","wrL"],["sh","elR"],["elR","wrR"],["hip","knL"],["knL","anL"],["anL","ftL"],["hip","knR"],["knR","anR"],["anR","ftR"]];
+  const jg=new T.SphereGeometry(.05,14,14),bg=new T.CylinderGeometry(.016,.016,1,6);
+  const J={};names.forEach(n=>{J[n]=new T.Mesh(jg,jointM);scene.add(J[n])});
+  J.head.scale.setScalar(1.7);
+  const B=links.map(()=>{const m=new T.Mesh(bg,boneM);scene.add(m);return m});
+
+  const lines=[];for(let i=0;i<15;i++){lines.push(i*.5)}
+  const gp=new Float32Array(lines.length*6),gg=new T.BufferGeometry();
+  gg.setAttribute("position",new T.BufferAttribute(gp,3));
+  scene.add(new T.LineSegments(gg,gridM));
+  function grid(time){lines.forEach((b,i)=>{const x=((b-time*.87)%7.5+7.5)%7.5-4.1;gp.set([x,0,-1.8,x,0,1.8],i*6)});gg.attributes.position.needsUpdate=true}
+
+  const v=(x,y,z)=>new T.Vector3(x,y,z),up=v(0,1,0);
+    const cs=Math.cos,sn=Math.sin;
+  // briefcase (hangs from the right hand)
+  const caseG=new T.Group(),bx=new T.BoxGeometry(.36,.26,.09);
+  const cm=new T.Mesh(bx,caseM),ce=new T.LineSegments(new T.EdgesGeometry(bx),lineM),hdl=new T.Mesh(new T.TorusGeometry(.055,.01,6,14,Math.PI),boneM);
+  cm.position.y=ce.position.y=-.2;hdl.position.y=-.07;caseG.add(cm,ce,hdl);scene.add(caseG);
+  // open door ahead
+  const door=new T.Mesh(new T.PlaneGeometry(1,2),doorM);door.rotation.y=Math.PI/2;door.position.set(2.6,1,0);scene.add(door);
+  const fg=new T.BufferGeometry();fg.setAttribute("position",new T.Float32BufferAttribute([0,0,-.5,0,2,-.5,0,2,-.5,0,2,.5,0,2,.5,0,0,.5,0,0,.5,0,0,-.5],3));
+  const doorFrame=new T.LineSegments(fg,doorL);doorFrame.position.x=2.6;scene.add(doorFrame);
+  // gaze line: the head scans left and right while heading for the door
+  const gaze=new T.Mesh(bg,jointM);gaze.scale.set(1,.5,1);scene.add(gaze);
+  function pose(t){
+    const hip=v(0,1+.025*cs(2*t),0),P={hip};
+    const sh=hip.clone().add(v(.05,.56,0));P.sh=sh;P.head=sh.clone().add(v(.03,.27,0));
+    [["L",0,.11],["R",Math.PI,-.11]].forEach(([k,ph,z])=>{
+      const a=.42*sn(t+ph),f=.05+.55*Math.max(0,cs(t+ph-.4)),b=a-f;
+      const kn=hip.clone().add(v(sn(a)*.45,-cs(a)*.45,z));
+      const an=kn.clone().add(v(sn(b)*.45,-cs(b)*.45,0));
+      P["kn"+k]=kn;P["an"+k]=an;P["ft"+k]=an.clone().add(v(.13,-.03,0));
+      const u=k==="L"?-.4*sn(t+ph):.06-.05*sn(t),w=k==="L"?u+.4:u+.08;
+      const el=sh.clone().add(v(sn(u)*.3,-cs(u)*.3,-z*1.7));
+      P["el"+k]=el;P["wr"+k]=el.clone().add(v(sn(w)*.27,-cs(w)*.27,0));
+    });
+    return P;
+  }
+  function draw(time){
+    const t=time*3.2,P=pose(t);
+    names.forEach(n=>J[n].position.copy(P[n]));
+    links.forEach(([a,b],i)=>{
+      const pa=P[a],pb=P[b],dir=pb.clone().sub(pa),m=B[i];
+      m.position.copy(pa).addScaledVector(dir,.5);m.scale.y=dir.length();
+      m.quaternion.setFromUnitVectors(up,dir.normalize());
+    });
+    caseG.position.copy(P.wrR);caseG.rotation.z=-.1-.12*sn(t+.6);
+    const yw=.55*sn(t*.4),gd=v(cs(yw),-.05,sn(yw)).normalize();
+    gaze.position.copy(P.head).addScaledVector(gd,.33);gaze.quaternion.setFromUnitVectors(up,gd);
+    doorM.opacity=.18+.08*sn(time*1.6);
+    grid(time);
+  }
+  let mx=0;
+  addEventListener("pointermove",e=>{mx=e.clientX/innerWidth-.5});
+  function size(){const r=cvs.getBoundingClientRect();renderer.setSize(r.width,r.height,false);cam.aspect=r.width/r.height;cam.updateProjectionMatrix()}
+  new ResizeObserver(size).observe(cvs);size();
+  let cur=0,visible=true;
+  new IntersectionObserver(e=>{visible=e[0].isIntersecting}).observe(cvs);
+  const still=matchMedia("(prefers-reduced-motion:reduce)").matches;
+  function frame(ms){
+    cur+=(mx-cur)*.05;const ang=.75+cur*.9;
+    cam.position.set(Math.sin(ang)*6.4+1.1,1.5,Math.cos(ang)*6.4);cam.lookAt(1.1,.95,0);
+    draw(ms/1000);renderer.render(scene,cam);
+    if(!still)requestAnimationFrame(frame);
+  }
+  function loop(ms){if(visible)frame(ms);else requestAnimationFrame(loop)}
+  if(still){frame(400)}else{
+    (function tick(ms){if(visible){cur+=(mx-cur)*.05;const ang=.75+cur*.9;cam.position.set(Math.sin(ang)*6.4+1.1,1.5,Math.cos(ang)*6.4);cam.lookAt(1.1,.95,0);draw(ms/1000);renderer.render(scene,cam)}requestAnimationFrame(tick)})(0);
+  }
+})();
+</script>
+</body>
+</html>
