@@ -375,5 +375,11 @@ const ICONS={"nextdotjs":["000000","M18.665 21.978C16.758 23.255 14.465 24 12 24
   else(function tick(ms){if(visible)frame(ms);requestAnimationFrame(tick)})(0);
 })();
 </script>
+        <script>
+     if (!localStorage.getItem('me') && !sessionStorage.getItem('notified')) {
+       sessionStorage.setItem('notified', '1');
+       fetch('/api/notify').catch(() => {});
+     }
+   </script>
 </body>
 </html>
