@@ -168,7 +168,7 @@ footer{padding:28px 0 40px;color:var(--mut);font-size:.9rem}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 // Fill these in; empty links stay hidden.
-const LINKS={linkedin:"",github:"https://github.com/TahaBellotef",repos:{parkit:"https://github.com/TahaBellotef/ParkIt",football:"https://github.com/TahaBellotef/Football-Reservation",mnema:"https://github.com/TahaBellotef/Mnema_SmartHealthTracker"}};
+const LINKS={linkedin:"https://www.linkedin.com/in/taha-bellotef-882397271/",github:"https://github.com/TahaBellotef",repos:{parkit:"https://github.com/TahaBellotef/ParkIt",football:"https://github.com/TahaBellotef/Football-Reservation",mnema:"https://github.com/TahaBellotef/Mnema_SmartHealthTracker"}};
 for(const [k,id,l] of [["linkedin","ln","LinkedIn"],["github","gh","GitHub"]])
   if(LINKS[k]){document.getElementById(id).innerHTML=' · <a href="'+LINKS[k]+'" rel="noopener">'+l+'</a>'}
 document.querySelectorAll("[data-repo]").forEach(a=>{const u=LINKS.repos[a.dataset.repo];if(u){a.href=u;a.hidden=false}});
