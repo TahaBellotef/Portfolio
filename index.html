@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
      <script>
-     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-   </script>
+  if (!localStorage.getItem('me') && !sessionStorage.getItem('notified')) {
+    sessionStorage.setItem('notified', '1');
+    const p = new URLSearchParams({
+      ref: document.referrer || 'direct',
+      src: new URLSearchParams(location.search).get('src') || '',
+      lang: navigator.language || ''
+    });
+    fetch('/api/notify?' + p).catch(() => {});
+  }
+</script>
    <script defer src="/_vercel/insights/script.js"></script>
 <head>
 <meta charset="utf-8">
